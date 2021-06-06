@@ -319,3 +319,18 @@
   right: 1px;
   border: 1px solid #000;
 }
+
+/*POSTS BLOG*/
+
+.posts-blog {
+  display: flex;
+  flex-direction: column;
+  padding: 88px 0 80px 0;
+  width: 100%;
+  min-height: 1026px;
+  box-sizing: border-box;
+}
+
+.posts-blog__title {
+  margin: 0 auto;
+}
