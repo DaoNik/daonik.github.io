@@ -325,12 +325,153 @@
 .posts-blog {
   display: flex;
   flex-direction: column;
-  padding: 88px 0 80px 0;
+  padding: 88px 0 0 0;
   width: 100%;
   min-height: 1026px;
   box-sizing: border-box;
 }
 
 .posts-blog__title {
+  margin: 0 auto 23px;
+  font-size: 32px;
+  line-height: 38px;
+  /* identical to box height */
+
+  text-align: center;
+}
+
+.posts-blog__subtitle {
+  margin: 0 auto 71px;
+  font-size: 18px;
+  line-height: 135.94%;
+  /* identical to box height, or 24px */
+
+  text-align: center;
+}
+
+.posts-blog__card-feature {
+  display: flex;
+  flex-direction: column;
+  width: 1170px;
+  max-width: 90%;
+  height: 370px;
+  margin: 0 auto 40px;
+  background-color: #000;
+  color: #fff;
+  position: relative;
+}
+
+
+.posts-blog__card-feature-title {
+  font-weight: normal;
+  margin: 27px  0 0 478px;
+  width: 492px;
+  height: 125px;
+  font-size: 48px;
+  line-height: 58px;
+}
+
+.posts-blog__card-feature-author {
+  font-size: 14px;
+  line-height: 140.62%;
+  order: -1;
+  margin: 63px 0 0 478px;
+}
+
+.posts-blog__card-feature-link {
+  font-size: 18px;
+  line-height: 140.62%;
+  margin: 60px 0 0 478px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.posts-blog__card-img {
+  width: 400px;
+  height: 370px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.posts-blog__card-articles {
+  display: flex;
+  justify-content: space-between;
+  width: 1170px;
+  max-width: 90%;
+  height: 370px;
   margin: 0 auto;
+}
+
+.posts-blog__card-article {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 570px;
+  max-width: 48%;
+  height: 290px;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
+  padding: 20px;
+}
+
+.posts-blog__card-article-title {
+  font-size: 24px;
+  line-height: 140.62%;
+  width: 474px;
+  height: 68px;
+}
+
+.posts-blog__card-article-subtitle {
+  width: 474px;
+  height: 72px;
+  font-size: 18px;
+  line-height: 140.62%;
+}
+
+.posts-blog__card-article-link {
+  text-decoration: none;
+  color: #000;
+}
+
+/* FOOTER */
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 106px;
+}
+
+.footer__navigation {
+  width: 80%;
+  border-bottom: 1px solid #000;
+  padding-bottom: 43px;
+}
+
+.footer__main-menu {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  align-items: center;
+}
+
+.footer__link {
+  text-decoration: none;
+  color: #000;
+}
+
+.footer__social-menu {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin-top: 56px;
+}
+
+.footer__copyright {
+  margin-top: 72.8px;
+}
+
+.footer__copyright-margin {
+  margin-left: 14px;
 }
