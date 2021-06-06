@@ -7,8 +7,8 @@
 
 .header {
   height: 100vh;
-  min-height: 700px;
-  max-height: 816px;
+  min-height: 816px;
+  position: relative;
 }
 
 .logo {
@@ -60,11 +60,19 @@
 
 .header__hero-side {
   width: 100%;
-  max-height: 700px;
+  height: 700px;
   display: flex;
   flex-direction: column;
   position: relative;
   background-color: #F1F1F2;
+  z-index: 0;
+}
+
+.header__hero-side::before {
+  content: "";
+  width: 100%;
+  height: 700px;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .header__title {
@@ -107,7 +115,79 @@
   z-index: -1;
   width: 719px;
   height: 700px;
+  max-height: 100%;
   position: absolute;
   top: 0;
   right: 0;
+}
+
+/* FEATURE-SPLIT*/
+
+.feature-split {
+  box-sizing: border-box;
+  min-height: 600px;
+  height: 600px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  z-index: 0;
+}
+
+.feature-split::before {
+  content: "";
+  height: 600px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.feature-split__title {
+  position: absolute;
+  left: 57.85%;
+  right: 28.68%;
+  top: 27.33%;
+  bottom: 65.17%;
+
+  font-size: 32px;
+  line-height: 140.62%;
+  /* identical to box height, or 45px */
+
+  color: #000000;
+}
+
+.feature-split__subtitle {
+  position: absolute;
+  left: 57.85%;
+  right: 11.53%;
+  top: 38.67%;
+  bottom: 33.17%;
+
+  font-size: 20px;
+  line-height: 140.62%;
+  /* or 28px */
+  text-align: justify;
+
+  color: #000000;
+}
+
+.feature-split__link {
+  position: absolute;
+  left: 57.85%;
+  right: 28.26%;
+  top: 72.67%;
+  bottom: 17.33%;
+
+  border: 1px solid #F7941E;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.feature-split__image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  max-height: 100%;
+  width: 733.15px;
+  height: 618.6px;
+  z-index: -1;
 }
